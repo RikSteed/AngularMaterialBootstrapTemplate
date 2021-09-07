@@ -1,5 +1,8 @@
 {
   "header": {
     "welcome": "いらっしゃいませ"
+  },
+  "page1": {
+    "title": "Japanese"
   }
 }

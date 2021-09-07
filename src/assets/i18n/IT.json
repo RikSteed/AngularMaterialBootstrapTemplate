@@ -1,5 +1,8 @@
 {
   "header": {
     "welcome": "Benvenuto"
+  },
+  "page1": {
+    "title": "Italian"
   }
 }
