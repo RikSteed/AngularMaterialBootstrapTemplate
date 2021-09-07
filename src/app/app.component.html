@@ -29,6 +29,22 @@
   <button (click)="counter()" mat-raised-button>Count</button> &nbsp;
   <button (click)="subtractor()" mat-flat-button color="accent">Subtract</button>
 
+  <br>
+  <br>
+<!-- Language Translation support -->
+<mat-form-field appearance="fill">
+  <mat-label>Language</mat-label>
+  <mat-select [(ngModel)]="language" (selectionChange)="changeLanguage(language)">
+    <mat-option *ngFor="let language of languages" [value]="language.id">
+      {{language.desc}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+&nbsp;
+
+{{'header.welcome' | translate}}
+
 <h2>Routing</h2>
 <!-- Angular Routing -->
 <button routerLink="page1" mat-flat-button color="primary">Page 1</button> &nbsp;
